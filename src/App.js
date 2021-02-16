@@ -5,22 +5,25 @@ import {
   Route, 
   Redirect
 } from 'react-router-dom'
+import Header from './features/Header/Header';
+import SubredditContent from './features/Subreddits/Subreddit';
+import Posts from './features/posts/Posts';
+import Footer from './features/Footer/Footer';
 
-import { Navbar } from './app/Navbar'
-
-import { PostsList } from './features/posts/postsList'
 
 function App() {
   return (
     <Router>
-      <Navbar />
       <div className="App">
         <Switch>
           <Route 
             exact path="/"
             render={() => (
               <React.Fragment>
-                <PostsList />
+                <Header />
+                <SubredditContent />
+                <Posts />
+                <Footer />
               </React.Fragment>
             )}
           />

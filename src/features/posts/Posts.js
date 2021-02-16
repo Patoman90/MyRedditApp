@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { useSelector, useDispatch } from 'react-redux';
-import {changeActivePostId} from './singlePost/singlePostSlice';
+import {changeActivePostId} from './singlePostSlice';
 
-export const Posts = () => {
+const Posts = () => {
 
     const activeSearchInput = useSelector(state => state.search);
     const posts = useSelector(state => state.posts);
@@ -18,7 +18,7 @@ export const Posts = () => {
                     <div>
                         <Link to={"/singlePost"} onClick={() => dispatch(changeActivePostId(post.name))}>
                             <h2>{post.title}</h2>
-                            <img src={post.url} onError={(e) => e.target.style.display = "none"} />
+                            <img src={post.url} onError={(e) => e.target.style.display = "none"} alt=''/>
                             <p>{post.selftext.substring(0, 600) + (post.selftext.length > 600 ? " [...]" : "")}</p>
                         </Link>
                     </div>
@@ -27,3 +27,4 @@ export const Posts = () => {
         </section>
     );
 }
+export default Posts;

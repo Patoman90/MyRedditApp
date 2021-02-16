@@ -6,7 +6,7 @@ import RedditIcon from '@material-ui/icons/Reddit';
 
 import  { useDispatch } from 'react-redux';
 import { changeCurrentSub } from '../Subreddits/Subredditslice';
-import { SearchReddit } from './Search';
+import SearchReddit from './Search';
 
 //Styles
 const headerStyles = makeStyles((theme) => ({
