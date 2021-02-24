@@ -1,12 +1,22 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+
 
 
 
 //Styles
 const footerStyles = makeStyles((theme) => ({
-    
+    root: {
+        flexGrow: 1,
+      },
+    title: {
+        textAlign: 'center',
+        flexGrow: 1,
+      },
   }));
 
 const Footer = () => {
@@ -14,15 +24,19 @@ const Footer = () => {
     const classes = footerStyles;
 
     return(
-        <Grid container>
-            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                <footer>
-                    <h2>
-                        Student project by Patrick.
-                    </h2>
-                </footer>
-            </Grid>
-        </Grid>
+        <Container minWidth="xs">
+            <div className={classes.root}>
+                <AppBar position="static">
+                    <Toolbar>
+                        <Grid item xs={12}>
+                            <h2 className={classes.title} noWrap>
+                                Project by Patrick Trollip
+                            </h2>
+                        </Grid>
+                    </Toolbar>
+                </AppBar>
+            </div>
+        </Container>
     );
 
 }

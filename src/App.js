@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route, 
   Redirect
-} from 'react-router-dom'
+} from 'react-router-dom';
 import Header from './features/Header/Header';
 import SubredditContent from './features/Subreddits/Subreddit';
 import Posts from './features/posts/Posts';
@@ -12,6 +12,7 @@ import Footer from './features/Footer/Footer';
 
 
 function App() {
+  
   return (
     <Router>
       <div className="App">

@@ -38,7 +38,7 @@ const SubredditContent = (props) => {
                             <Link to="/" key={item.id}>
                                 <li onClick={() => dispatch(changeCurrentSub(item.url))}>
                                     {item.name}
-                                    <img src={item.icon} onError={(event) => event.target.src = props.logo}/>
+                                    <img src={item.icon} onError={(event) => event.target.src = props.logo} alt=''/>
                                 </li>
                             </Link>
                         ))}
