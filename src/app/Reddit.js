@@ -11,7 +11,7 @@ export const getSubredditPosts = async (subreddit) => {
 };
 
 export const getSubredditContent = async () => {
-  const response = await fetch(`${API_ROOT}/subreddits.json`);
+  const response = await fetch(`${API_ROOT}/r/locksport.json`);
   const json = await response.json();
 
   return json.data.children.map((subreddit) => subreddit.data);

@@ -4,13 +4,20 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
 import { getSubredditContent } from '../../app/Reddit';
 import { addToSubs, changeCurrentSub } from '../Subreddits/Subredditslice';
 
 
 //Styles
 const contentStyles = makeStyles((theme) => ({
-
+    root: {
+        maxWidth: 345,
+      },
+    img: {
+        maxWidth: 150,
+        maxHeight: 150,
+    },
   }));
 
 //Subreddit content component
@@ -30,20 +37,20 @@ const SubredditContent = (props) => {
     }), [dispatch]);
 
     return(
-        <Grid container>
-            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                <section>
+        <Grid container direction='column'>
+            <Grid item >
+                <Card className={classes.root}>
                     <ul>
                         {subReddits.map(item => (
                             <Link to="/" key={item.id}>
-                                <li onClick={() => dispatch(changeCurrentSub(item.url))}>
+                                <li onClick={() => dispatch(changeCurrentSub(item.url))} >
                                     {item.name}
-                                    <img src={item.icon} onError={(event) => event.target.src = props.logo} alt=''/>
+                                    <img className={classes.img} src={item.icon} onError={(event) => event.target.src = props.logo} alt=''/>
                                 </li>
                             </Link>
                         ))}
                     </ul>
-                </section>
+                </Card>
             </Grid>
         </Grid>
     );
