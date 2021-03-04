@@ -32,7 +32,7 @@ const SubredditContent = (props) => {
                 name: item.display_name,
                 url: item.url,
                 id: item.id,
-                icon: item.community_icon.split("?")[0],
+                icon: item.community_icon,
             })));
     }), [dispatch]);
 

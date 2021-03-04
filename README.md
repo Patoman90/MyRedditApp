@@ -1,69 +1,89 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# Reddit book worm
 
-## Available Scripts
+This is my first project I built when learning to use React with Redux and the Reddit API.
 
-In the project directory, you can run:
+## Summary
 
-### `npm start`
+  - [Getting Started](#getting-started)
+  - [Runing the tests](#running-the-tests)
+  - [Deployment](#deployment)
+  - [Built With](#built-with)
+  - [Contributing](#contributing)
+  - [Versioning](#versioning)
+  - [Authors](#authors)
+  - [Acknowledgments](#acknowledgments)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+You can fork this project onto your local machine. 
+To create the project make sure you have Node installed and then NPM install the dependencies after you
+create a new react redux app. Visit the react and redux documentation for that tutorial.
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You will need to install Node on your machine to manage the dependencies. You will need a code editor like VS code for example.
+You will need to create a react app. In your terminal you can start the production build and go from there.
 
-### `npm run build`
+### Installing
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Some steps to get you started.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Create the react app with- create-react-app my-app  then cd my-app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+NPM start to make the development server run so you can see changes when you save.
 
-### `npm run eject`
+Say what the step will be
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    Give the example
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+And repeat
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    until finished
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+End with an example of getting some data out of the system or using it
+for a little demo
 
-## Learn More
+## Running the tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ I installed the Jest testing library to make unit tests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Break down into end to end tests
 
-### Code Splitting
+Selenium was used to make end to end tests
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+### And coding style tests
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+## Deployment
 
-### Advanced Configuration
+I deployed the project by making sure
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+## Built With
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+-VS Code,
+-Node package manager,
+-React with Redux,
+-Material UI tools,
+-Jest for unit tests,
+-Selenium for end to end tests,
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# MyRedditApp
+
+## Versioning
+
+For version control and versioning I used GIT and github. I also used Node package manager to manage the modules and check if they were running at the right version and current version if possible.
+
+## Authors
+
+**Patrick**
+
+## Acknowledgments
+
+  - Hat tip to anyone whose code was used
+  - Inspiration
+- **Billie Thompson** - *Provided README Template* -
+    [PurpleBooth](https://github.com/PurpleBooth)
